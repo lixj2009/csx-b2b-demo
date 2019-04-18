@@ -8,9 +8,9 @@
 csx-b2b-demo
     -- csx-b2b-demo-core #公共代码
     -- csx-b2b-demo-dao #数据库操作
-    -- csx-b2b-crm-service  #业务逻辑
-    -- csx-b2b-crm-task #批处理任务
-    -- csx-b2b-crm-api  #api端接口
-    -- csx-b2b-crm-api-provider #api端第三方调用提供request，response类库
+    -- csx-b2b-demo-service  #业务逻辑
+    -- csx-b2b-demo-task #批处理任务
+    -- csx-b2b-demo-api  #api端接口
+    -- csx-b2b-demo-api-provider #api端第三方调用提供request，response类库
 ```
 
