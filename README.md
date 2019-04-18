@@ -12,5 +12,10 @@ csx-b2b-demo
     -- csx-b2b-demo-task #批处理任务
     -- csx-b2b-demo-api  #api端接口
     -- csx-b2b-demo-api-provider #api端第三方调用提供request，response类库
+ -- doc #项目资料
+ -- README.md #项目文档
 ```
 
+## 安装部署说明
+
+## 注意事项
