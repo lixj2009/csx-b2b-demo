@@ -25,9 +25,10 @@ csx-b2b-demo
         -- start.sh #项目start 启动脚本 详细:http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e01688432f6080311.html
         -- backup #jar 包备份
         -- rollback.sh #项目rollback 回滚脚本 详细:http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016a1092a2f5101a.html
+        -- pinpoint-agent #pinpoint 部署集成 详细:http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016a47dd82761517.html
 ```
 
 
 ## 注意事项
 1.  项目采用jenkins部署,有正常发布，也有回滚发布。
-2.  项目部署采用web权限用户部署。
+2.  项目部署目录采用web权限用户部署。
