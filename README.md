@@ -16,19 +16,24 @@ csx-b2b-demo
  -- README.md #项目文档
 ```
 
-## 安装部署说明
+## 安装部署目录结构
 ```
 /home/web #线上部署目录结构说明,用户web,默认目录归属web用户
     -- jenkins-publish #jenkins自动上传jar的目录
     -- demo #项目demo目录
         -- csx-b2b-demo-webapi-1.0-SNAPSHOT.jar #spring-boot 服务集合打包jar
-        -- start.sh #项目start 启动脚本 详细:http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e01688432f6080311.html
+        -- start.sh #项目start 启动脚本 详情如下
         -- backup #jar 包备份
-        -- rollback.sh #项目rollback 回滚脚本 详细:http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016a1092a2f5101a.html
-        -- pinpoint-agent #pinpoint 部署集成 详细:http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016a47dd82761517.html
+        -- rollback.sh #项目rollback 回滚脚本 详情如下
+        -- pinpoint-agent #pinpoint 部署集成 详情如下
 ```
+## 启动脚本和回滚脚本
+启动脚本: http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e01688432f6080311.html
+回滚脚本: http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016a1092a2f5101a.html
 
+## pinpoint 部署集成探针
+http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016a47dd82761517.html
 
 ## 注意事项
-1.  项目采用jenkins部署,有正常发布，也有回滚发布。
+1.  项目采用jenkins部署,必须有正常发布，也有回滚发布。
 2.  项目部署目录采用web权限用户部署。
