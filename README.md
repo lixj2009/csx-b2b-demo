@@ -35,8 +35,8 @@ csx-b2b-demo
 * http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016a47dd82761517.html
 
 ## jenkins 部署示例
-  正常: csx_环境_demo 
-  回滚: csx_环境_demo_rollback
+* 正常: csx_环境_demo 
+* 回滚: csx_环境_demo_rollback
   
 ## 注意事项
 1.  项目采用jenkins部署,必须有正常发布，也有回滚发布。
