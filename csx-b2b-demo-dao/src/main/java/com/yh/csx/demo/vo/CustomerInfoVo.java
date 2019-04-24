@@ -1,11 +1,11 @@
 package com.yh.csx.demo.vo;
 
+import java.math.BigDecimal;
+
 import com.yh.csx.demo.po.CustomerPo;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-
-import java.math.BigDecimal;
 
 @Data
 public class CustomerInfoVo extends CustomerPo {
