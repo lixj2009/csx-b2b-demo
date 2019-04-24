@@ -7,6 +7,7 @@ import java.util.List;
 import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.yh.csx.common.model.UploadFile;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

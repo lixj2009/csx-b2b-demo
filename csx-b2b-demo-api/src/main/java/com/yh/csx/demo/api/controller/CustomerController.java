@@ -11,13 +11,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.fastjson.JSON;
-import com.yh.csx.demo.core.entity.CommonResponse;
+import com.yh.csx.common.entity.CommonResponse;
+import com.yh.csx.common.model.UploadFile;
+import com.yh.csx.common.util.BeanUtils;
 import com.yh.csx.demo.core.enums.CooperationModeEnum;
 import com.yh.csx.demo.core.enums.CustomerStatusEnum;
 import com.yh.csx.demo.core.request.web.CustomerAddReq;
-import com.yh.csx.demo.core.request.web.UploadFile;
 import com.yh.csx.demo.core.response.web.CustomerDetailsResp;
-import com.yh.csx.demo.core.util.BeanUtils;
 import com.yh.csx.demo.po.CustomerPo;
 import com.yh.csx.demo.service.CustomerService;
 import com.yh.csx.demo.service.vo.User;
