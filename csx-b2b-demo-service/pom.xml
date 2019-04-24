@@ -16,6 +16,11 @@
 			<artifactId>csx-b2b-demo-dao</artifactId>
 			<version>${parent.version}</version>
 		</dependency>
+        <dependency>
+            <groupId>com.yh.csx</groupId>
+            <artifactId>csx-b2b-demo-api-provider</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>

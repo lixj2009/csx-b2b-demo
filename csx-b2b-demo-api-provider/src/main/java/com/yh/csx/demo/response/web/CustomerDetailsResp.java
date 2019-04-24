@@ -1,6 +1,6 @@
-package com.yh.csx.demo.core.response.web;
+package com.yh.csx.demo.response.web;
 
-import com.yh.csx.demo.core.request.web.CustomerAddReq;
+import com.yh.csx.demo.request.web.CustomerAddReq;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
