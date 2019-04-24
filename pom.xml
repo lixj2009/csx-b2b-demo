@@ -38,26 +38,16 @@
         <fastjson.version>1.2.8</fastjson.version>
         <poi.version>3.17</poi.version>
         <easyexcel.version>1.1.1</easyexcel.version>
-        <usercenter.version>1.1-SNAPSHOT</usercenter.version>
-        <storagecenter.version>1.1-SNAPSHOT</storagecenter.version>
         <dubbo.version>yh2.5.7</dubbo.version>
         <dobbo.starter.version>2.0.0</dobbo.starter.version>
         <zkClient.version>0.9</zkClient.version>
         <jedis.version>2.9.0</jedis.version>
+        <spring.cloud.version>Greenwich.RELEASE</spring.cloud.version>
+        <eureka.version>Greenwich.RELEASE</eureka.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>com.yh.b2b.usercenter</groupId>
-                <artifactId>yh-b2b-usercenter-facade-stub</artifactId>
-                <version>${usercenter.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.yh.b2b.storagecenter</groupId>
-                <artifactId>yh-b2b-storagecenter-facade-stub</artifactId>
-                <version>${storagecenter.version}</version>
-            </dependency>
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -183,6 +173,23 @@
                 <artifactId>jedis</artifactId>
                 <version>${jedis.version}</version>
             </dependency>
+            <dependency>
+	            <groupId>org.springframework.cloud</groupId>
+	            <artifactId>spring-cloud-dependencies</artifactId>
+	            <version>${spring.cloud.version}</version>
+	            <type>pom</type>
+	            <scope>import</scope>
+	        </dependency>
+	        <dependency>
+	            <groupId>org.springframework.cloud</groupId>
+	            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+	            <version>${eureka.version}</version>
+	        </dependency>
+	         <dependency>
+	            <groupId>org.springframework.cloud</groupId>
+	            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+	            <version>${eureka.version}</version>
+	        </dependency>
         </dependencies>
     </dependencyManagement>
 
