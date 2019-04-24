@@ -17,8 +17,8 @@ import com.yh.csx.common.util.BeanUtils;
 import com.yh.csx.demo.core.enums.CooperationModeEnum;
 import com.yh.csx.demo.core.enums.CustomerStatusEnum;
 import com.yh.csx.demo.po.CustomerPo;
-import com.yh.csx.demo.request.web.CustomerAddReq;
-import com.yh.csx.demo.response.web.CustomerDetailsResp;
+import com.yh.csx.demo.request.CustomerAddReq;
+import com.yh.csx.demo.response.CustomerDetailsResp;
 import com.yh.csx.demo.service.CustomerService;
 import com.yh.csx.demo.service.vo.User;
 

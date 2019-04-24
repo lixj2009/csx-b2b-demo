@@ -14,7 +14,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.yh.csx</groupId>
-			<artifactId>csx-b2b-demo-core</artifactId>
+			<artifactId>csx-b2b-demo-api-provider</artifactId>
 			<version>${parent.version}</version>
 		</dependency>
 		<dependency>

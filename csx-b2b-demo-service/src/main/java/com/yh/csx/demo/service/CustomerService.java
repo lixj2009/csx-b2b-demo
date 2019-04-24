@@ -16,10 +16,10 @@ import com.yh.csx.common.util.DateUtils;
 import com.yh.csx.demo.core.enums.CooperationModeEnum;
 import com.yh.csx.demo.dao.CustomerPoMapper;
 import com.yh.csx.demo.po.CustomerPo;
-import com.yh.csx.demo.qo.CustomerQo;
-import com.yh.csx.demo.request.web.CustomerAddReq;
+import com.yh.csx.demo.request.CustomerAddReq;
+import com.yh.csx.demo.request.CustomerQo;
+import com.yh.csx.demo.response.CustomerInfoVo;
 import com.yh.csx.demo.service.vo.User;
-import com.yh.csx.demo.vo.CustomerInfoVo;
 
 import lombok.extern.slf4j.Slf4j;
 

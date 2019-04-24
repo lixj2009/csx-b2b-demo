@@ -1,4 +1,4 @@
-package com.yh.csx.demo.qo;
+package com.yh.csx.demo.request;
 
 import java.util.List;
 

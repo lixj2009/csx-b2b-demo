@@ -6,8 +6,8 @@ import org.apache.ibatis.annotations.Param;
 
 import com.yh.csx.demo.po.CustomerPo;
 import com.yh.csx.demo.po.CustomerPoExample;
-import com.yh.csx.demo.qo.CustomerQo;
-import com.yh.csx.demo.vo.CustomerInfoVo;
+import com.yh.csx.demo.request.CustomerQo;
+import com.yh.csx.demo.response.CustomerInfoVo;
 
 public interface CustomerPoMapper {
     long countByExample(CustomerPoExample example);
