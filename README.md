@@ -37,6 +37,9 @@ csx-b2b-demo
 ## jenkins 部署示例
 * 正常: csx_环境_demo 
 * 回滚: csx_环境_demo_rollback
+
+## mybatis代码生成参考知识库
+* http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e01685ef34d3000d4.html
   
 ## 注意事项
 1.  项目采用jenkins部署,必须有正常发布，也有回滚发布。
