@@ -18,7 +18,7 @@ public interface CustomerServiceProvider {
 	@GetMapping("/get")
 	CommonResponse<CustomerDetailsResp> getCustomer(@RequestParam("customerId") Long customerId);
 
-	@GetMapping("/enable")
+	@PostMapping("/enable")
 	CommonResponse enable(@RequestParam("customerId") Long customerId, @RequestParam("enable") Boolean enable);
 
 	@PostMapping("/add")
