@@ -1,4 +1,4 @@
-package com.yh.csx.demo.main; /**
+package com.yh.csx.demo; /**
  * Application class
  *
  * @author huyalin
