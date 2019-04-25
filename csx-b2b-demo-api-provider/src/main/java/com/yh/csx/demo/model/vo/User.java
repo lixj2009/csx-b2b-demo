@@ -1,13 +1,7 @@
-package com.yh.csx.demo.service.vo;
+package com.yh.csx.demo.model.vo;
 
 import lombok.Data;
 
-/**
- * User class
- *
- * @author huyalin
- * @date 2019/2/22
- */
 @Data
 public class User {
     private Long userId;

@@ -19,9 +19,9 @@ import com.yh.csx.demo.model.enums.CustomerStatusEnum;
 import com.yh.csx.demo.model.po.Customer;
 import com.yh.csx.demo.model.request.CustomerAddReq;
 import com.yh.csx.demo.model.response.CustomerDetailsResp;
+import com.yh.csx.demo.model.vo.User;
 import com.yh.csx.demo.provider.CustomerProvider;
 import com.yh.csx.demo.service.CustomerService;
-import com.yh.csx.demo.service.vo.User;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

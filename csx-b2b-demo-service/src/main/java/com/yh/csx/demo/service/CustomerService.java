@@ -19,7 +19,7 @@ import com.yh.csx.demo.model.po.Customer;
 import com.yh.csx.demo.model.qo.CustomerQo;
 import com.yh.csx.demo.model.request.CustomerAddReq;
 import com.yh.csx.demo.model.vo.CustomerInfoVo;
-import com.yh.csx.demo.service.vo.User;
+import com.yh.csx.demo.model.vo.User;
 
 import lombok.extern.slf4j.Slf4j;
 
