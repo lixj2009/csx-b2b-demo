@@ -4,10 +4,10 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
 
+import com.yh.csx.demo.model.po.Customer;
+import com.yh.csx.demo.model.po.CustomerExample;
 import com.yh.csx.demo.model.qo.CustomerQo;
 import com.yh.csx.demo.model.vo.CustomerInfoVo;
-import com.yh.csx.demo.po.Customer;
-import com.yh.csx.demo.po.CustomerExample;
 
 public interface CustomerMapper {
     int countByExample(CustomerExample example);

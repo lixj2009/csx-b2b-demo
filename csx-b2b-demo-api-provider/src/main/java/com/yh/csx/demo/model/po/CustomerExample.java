@@ -1,4 +1,4 @@
-package com.yh.csx.demo.po;
+package com.yh.csx.demo.model.po;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
