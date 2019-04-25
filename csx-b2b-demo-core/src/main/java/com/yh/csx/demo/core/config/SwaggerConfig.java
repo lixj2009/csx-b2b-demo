@@ -1,4 +1,4 @@
-package com.yh.csx.demo.config;
+package com.yh.csx.demo.core.config;
 
 import java.lang.reflect.Field;
 import java.util.Arrays;
