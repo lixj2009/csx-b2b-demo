@@ -1,4 +1,4 @@
-package com.yh.csx.demo.core.enums;
+package com.yh.csx.demo.enums;
 
 import java.util.EnumSet;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.yh.csx.demo.core.enums;
+package com.yh.csx.demo.enums;
 
 public enum CustomerStatusEnum {
     PENDING("01", "待审批"),
