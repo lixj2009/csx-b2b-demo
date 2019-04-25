@@ -3,7 +3,7 @@ package com.yh.csx.demo.po;
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class CustomerPo {
+public class Customer {
     private Long id;
 
     private String customerNumber;

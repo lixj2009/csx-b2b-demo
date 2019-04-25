@@ -16,7 +16,7 @@ import com.yh.csx.common.model.UploadFile;
 import com.yh.csx.common.util.BeanUtils;
 import com.yh.csx.demo.enums.CooperationModeEnum;
 import com.yh.csx.demo.enums.CustomerStatusEnum;
-import com.yh.csx.demo.po.CustomerPo;
+import com.yh.csx.demo.po.Customer;
 import com.yh.csx.demo.request.CustomerAddReq;
 import com.yh.csx.demo.response.CustomerDetailsResp;
 import com.yh.csx.demo.service.CustomerService;
@@ -39,7 +39,7 @@ public class CustomerController extends BaseController {
 	@GetMapping("/get")
 	public CommonResponse<CustomerDetailsResp> getCustomer(Long customerId) {
 		return super.visit(() -> {
-			CustomerPo customer = customerService.getCustomer(customerId);
+			Customer customer = customerService.getCustomer(customerId);
 			if (customer.getCooperationMode().equals(CooperationModeEnum.TEMP.getCode())
 					&& (customer.getCustomerStatus().equals(CustomerStatusEnum.PENDING.getCode()) || customer.getCustomerStatus().equals(CustomerStatusEnum.REJECT.getCode()))) {
 				customer.setCreditLimit(customer.getTempCreditLimit());

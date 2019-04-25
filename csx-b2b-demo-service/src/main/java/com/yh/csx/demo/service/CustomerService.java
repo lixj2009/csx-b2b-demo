@@ -13,9 +13,9 @@ import com.github.pagehelper.PageHelper;
 import com.yh.csx.commom.exception.BusinessException;
 import com.yh.csx.common.util.BeanUtils;
 import com.yh.csx.common.util.DateUtils;
-import com.yh.csx.demo.dao.CustomerPoMapper;
+import com.yh.csx.demo.dao.CustomerMapper;
 import com.yh.csx.demo.enums.CooperationModeEnum;
-import com.yh.csx.demo.po.CustomerPo;
+import com.yh.csx.demo.po.Customer;
 import com.yh.csx.demo.request.CustomerAddReq;
 import com.yh.csx.demo.request.CustomerQo;
 import com.yh.csx.demo.response.CustomerInfoVo;
@@ -28,14 +28,14 @@ import lombok.extern.slf4j.Slf4j;
 public class CustomerService {
 
     @Autowired
-    private CustomerPoMapper customerMapper;
+    private CustomerMapper customerMapper;
 
     /**
      * 获取客户详细信息
      * @param id
      * @return
      */
-    public CustomerPo getCustomer(Long id) {
+    public Customer getCustomer(Long id) {
         return customerMapper.selectByPrimaryKey(id);
     }
 
@@ -44,7 +44,7 @@ public class CustomerService {
      * 修改客户信息
      * @param customer
      */
-    public void modify(CustomerPo customer) {
+    public void modify(Customer customer) {
         customerMapper.updateByPrimaryKey(customer);
     }
 
@@ -55,7 +55,7 @@ public class CustomerService {
      * @return
      */
     public void enable(String user, Long customerId, Boolean enable) {
-    	CustomerPo customer = customerMapper.selectByPrimaryKey(customerId);
+    	Customer customer = customerMapper.selectByPrimaryKey(customerId);
         customer.setActiveFlag(enable);
         customer.setUpdateBy(user);
         customerMapper.updateByPrimaryKeySelective(customer);
@@ -65,8 +65,8 @@ public class CustomerService {
      * 新增客户(保存草稿)
      * @param req
      */
-    public CustomerPo addCustomer(User user, CustomerAddReq req) {
-    	CustomerPo customer = BeanUtils.convert(CustomerPo.class, req);
+    public Customer addCustomer(User user, CustomerAddReq req) {
+    	Customer customer = BeanUtils.convert(Customer.class, req);
         customer.setChannelSecondCode(req.getFirstCategoryCode());
         
         if (customer.getCooperationMode().equals(CooperationModeEnum.TEMP.getCode())) {
@@ -91,7 +91,7 @@ public class CustomerService {
                 log.error("解析附件时出错", e);
             }
         }
-        CustomerPo beforCustomer = null;
+        Customer beforCustomer = null;
         if (Objects.nonNull(req.getId()) && Objects.nonNull(beforCustomer = customerMapper.selectByPrimaryKey(req.getId()))) {
             if (customerMapper.selectCountByCustomerName(req.getCustomerName(), req.getId()) > 0) {
                 throw new BusinessException("客户名称已存在");
@@ -130,7 +130,7 @@ public class CustomerService {
      * @param user
      * @param customer
      */
-    private void initCustomer(User user, CustomerPo customer) {
+    private void initCustomer(User user, Customer customer) {
         if (Objects.isNull(customer.getSalesUserId()) || customer.getSalesUserId() == 0) {
             customer.setSalesUserId(user.getUserId());
             customer.setSalesUserName(user.getUserName());
