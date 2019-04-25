@@ -1,4 +1,4 @@
-package com.yh.csx.demo.request;
+package com.yh.csx.demo.model.request;
 
 import java.math.BigDecimal;
 import java.util.Date;

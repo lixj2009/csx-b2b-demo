@@ -1,4 +1,4 @@
-package com.yh.csx.demo.api.controller;
+package com.yh.csx.demo.controller;
 
 import java.util.concurrent.Callable;
 

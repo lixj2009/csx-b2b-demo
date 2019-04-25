@@ -1527,14 +1527,14 @@
 		</if>
 	</select>
 	
-     <resultMap id="CustomerResultMap" type="com.yh.csx.demo.response.CustomerInfoVo" extends="BaseResultMap">
+     <resultMap id="CustomerResultMap" type="com.yh.csx.demo.model.vo.CustomerInfoVo" extends="BaseResultMap">
 	    <result column="day_avg_amount" property="dayAvgAmount" jdbcType="DECIMAL" />
 	    <result column="order_avg_amount" property="orderAvgAmount" jdbcType="DECIMAL" />
 	    <result column="order_count" property="orderCount" jdbcType="INTEGER" />
 	    <result column="no_order_days" property="noOrderDays" jdbcType="INTEGER" />
 	    <result column="distance" property="distance" jdbcType="INTEGER" />
     </resultMap>
-<select id="selectCustomerInfoList" resultMap="CustomerResultMap" parameterType="com.yh.csx.demo.request.CustomerQo">
+<select id="selectCustomerInfoList" resultMap="CustomerResultMap" parameterType="com.yh.csx.demo.model.qo.CustomerQo">
     select c.*,
     ifnull(s.day_avg_amount, 0) as day_avg_amount,
     ifnull(s.order_avg_amount, 0) as order_avg_amount,

@@ -1,4 +1,4 @@
-package com.yh.csx.demo.api.controller;
+package com.yh.csx.demo.controller;
 
 import java.math.BigDecimal;
 
@@ -14,11 +14,12 @@ import com.alibaba.fastjson.JSON;
 import com.yh.csx.common.entity.CommonResponse;
 import com.yh.csx.common.model.UploadFile;
 import com.yh.csx.common.util.BeanUtils;
-import com.yh.csx.demo.enums.CooperationModeEnum;
-import com.yh.csx.demo.enums.CustomerStatusEnum;
+import com.yh.csx.demo.model.enums.CooperationModeEnum;
+import com.yh.csx.demo.model.enums.CustomerStatusEnum;
+import com.yh.csx.demo.model.request.CustomerAddReq;
+import com.yh.csx.demo.model.response.CustomerDetailsResp;
 import com.yh.csx.demo.po.Customer;
-import com.yh.csx.demo.request.CustomerAddReq;
-import com.yh.csx.demo.response.CustomerDetailsResp;
+import com.yh.csx.demo.provider.CustomerProvider;
 import com.yh.csx.demo.service.CustomerService;
 import com.yh.csx.demo.service.vo.User;
 
@@ -30,7 +31,7 @@ import lombok.extern.slf4j.Slf4j;
 @Api("客户管理服务")
 @RestController
 @RequestMapping("/customer")
-public class CustomerController extends BaseController {
+public class CustomerController extends BaseController implements CustomerProvider{
 
 	@Autowired
 	private CustomerService customerService;

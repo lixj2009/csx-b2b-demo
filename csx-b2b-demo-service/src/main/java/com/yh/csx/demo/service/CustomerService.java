@@ -14,11 +14,11 @@ import com.yh.csx.commom.exception.BusinessException;
 import com.yh.csx.common.util.BeanUtils;
 import com.yh.csx.common.util.DateUtils;
 import com.yh.csx.demo.dao.CustomerMapper;
-import com.yh.csx.demo.enums.CooperationModeEnum;
+import com.yh.csx.demo.model.enums.CooperationModeEnum;
+import com.yh.csx.demo.model.qo.CustomerQo;
+import com.yh.csx.demo.model.request.CustomerAddReq;
+import com.yh.csx.demo.model.vo.CustomerInfoVo;
 import com.yh.csx.demo.po.Customer;
-import com.yh.csx.demo.request.CustomerAddReq;
-import com.yh.csx.demo.request.CustomerQo;
-import com.yh.csx.demo.response.CustomerInfoVo;
 import com.yh.csx.demo.service.vo.User;
 
 import lombok.extern.slf4j.Slf4j;

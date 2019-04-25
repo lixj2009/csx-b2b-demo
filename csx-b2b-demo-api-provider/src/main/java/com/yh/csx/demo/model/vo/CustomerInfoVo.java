@@ -1,4 +1,4 @@
-package com.yh.csx.demo.response;
+package com.yh.csx.demo.model.vo;
 
 import java.math.BigDecimal;
 import java.util.Date;
