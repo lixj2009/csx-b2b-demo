@@ -49,6 +49,7 @@
 				<includes>
 					<include>application-${profiles.active}.properties</include>
 					<include>application.properties</include>
+					<include>logback.xml</include>
 				</includes>
 			</resource>
 		</resources>
