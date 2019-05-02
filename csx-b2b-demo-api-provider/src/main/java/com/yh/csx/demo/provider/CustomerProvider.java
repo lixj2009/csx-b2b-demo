@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.yh.csx.common.entity.CommonResponse;
+import com.yh.csx.bsf.core.entity.CommonResponse;
 import com.yh.csx.demo.model.request.CustomerAddReq;
 import com.yh.csx.demo.model.response.CustomerDetailsResp;
 

@@ -8,7 +8,6 @@ import java.util.concurrent.ConcurrentHashMap;
  * CooperationModeEnum class
  * 合作模式：01长期客户；02临时客户
  * @author huyalin
- * @date 2019/2/21
  */
 public enum CooperationModeEnum {
     LONG_TERM("01", "长期客户"),

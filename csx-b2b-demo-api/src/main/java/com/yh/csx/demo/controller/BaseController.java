@@ -6,7 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.yh.csx.common.entity.CommonResponse;
+import com.yh.csx.bsf.core.entity.CommonResponse;
 
 public abstract class BaseController {
 

@@ -2,8 +2,7 @@ package com.yh.csx.demo.model.qo;
 
 import java.util.List;
 
-import com.yh.csx.common.entity.Pagination;
-
+import com.yh.csx.bsf.core.entity.Pagination;
 import lombok.Data;
 
 @Data
