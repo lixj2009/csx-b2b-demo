@@ -26,6 +26,11 @@ csx-b2b-demo
 ## pinpoint 部署集成探针示例
 * http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016a47dd82761517.html
 
+## 公开第三方接口给其他应用调用
+1. cd csx-b2b-demo-api-provider  #进入api-provider
+2. mvn clean install #编译api-provider
+3. mvn deploy  #部署到nesus 给第三方引用
+
 ## 安装部署目录结构标准
 ```
 /home/web #线上部署目录结构说明,用户web,默认目录归属web用户
@@ -48,3 +53,5 @@ csx-b2b-demo
 ## 注意事项
 1.  项目采用jenkins部署,必须有正常发布，也有回滚发布。
 2.  项目部署目录采用web权限用户部署。
+
+##### by 车江毅
