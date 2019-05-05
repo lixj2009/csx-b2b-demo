@@ -49,6 +49,9 @@ csx-b2b-demo
 ## jenkins 部署示例
 * 正常: csx_环境_demo 
 * 回滚: csx_环境_demo_rollback
+
+## sonar 代码质量检测集成示例
+* http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016a86812bf319e0.html
   
 ## 注意事项
 1.  项目采用jenkins部署,必须有正常发布，也有回滚发布。

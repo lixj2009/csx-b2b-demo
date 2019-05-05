@@ -38,7 +38,7 @@
 		<fastjson.version>1.2.8</fastjson.version>
 		<poi.version>3.17</poi.version>
 		<easyexcel.version>1.1.1</easyexcel.version>
-		<dubbo.version>yh2.5.7</dubbo.version>
+		<dubbo.version>2.5.7</dubbo.version>
 		<dobbo.starter.version>2.0.0</dobbo.starter.version>
 		<zkClient.version>0.9</zkClient.version>
 		<jedis.version>2.9.0</jedis.version>
