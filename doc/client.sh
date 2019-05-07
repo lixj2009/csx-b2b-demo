@@ -12,7 +12,6 @@
 projectname=$1
 version=$2 #默认master
 
-cd $path
 if [[ $projectname == "" ]]; then
 	echo "错误: 请输入新项目名"
 	exit 0
@@ -22,7 +21,7 @@ if [[ $version == "" ]]; then
 fi
 
 ### 目录
-path=$(pwd)
+path=$(cd $(dirname $0); pwd)
 path=$path/csx-b2b-$projectname
 echo "目录:$path,新项目:$projectname"
 
