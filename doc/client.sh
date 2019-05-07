@@ -53,7 +53,7 @@ function loopdic(){
   done
 }
 loopdic $path
-echo "完毕:循环所有文件 替换com.yh.csx.demo"
+echo "完毕:循环所有文件并替换demo信息"
 
 ### 循环替换模块文件夹
 dirs=('csx-b2b-demo-core' 'csx-b2b-demo-api-provider' 'csx-b2b-demo-dao' 'csx-b2b-demo-service' 'csx-b2b-demo-api' 'csx-b2b-demo-task')
