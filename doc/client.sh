@@ -11,9 +11,7 @@
 
 projectname=$1
 version=$2 #默认master
-path=$(cd $(dirname ${BASH_SOURCE[0]}); pwd)
-path=${path/\/doc/}
-echo "目录:$path,新项目:$projectname"
+
 cd $path
 if [[ $projectname == "" ]]; then
 	echo "错误: 请输入新项目名"
@@ -22,11 +20,18 @@ fi
 if [[ $version == "" ]]; then
 	version="master"
 fi
+
+### 目录
+path=$(cd $(dirname ${BASH_SOURCE[0]}); pwd)
+path=$path/csx-b2b-$projectname
+echo "目录:$path,新项目:$projectname"
+
 ### 下载项目模板
 rm -rf csx-b2b-demo-${version}.tar.gz
 curl -O http://10.252.192.3/csx-public/csx-b2b-demo/-/archive/${version}/csx-b2b-demo-${version}.tar.gz
 tar -zxvf csx-b2b-demo-${version}.tar.gz
 mv csx-b2b-demo-${version} csx-b2b-$projectname
+echo "完毕下载模板:csx-b2b-demo-${version}.tar.gz"
 
 ###循环所有文件 替换com.yh.csx.demo
 function loopdic(){
