@@ -22,7 +22,7 @@ if [[ $version == "" ]]; then
 fi
 
 ### 目录
-path=$(cd $(dirname ${BASH_SOURCE[0]}); pwd)
+path=$(pwd)
 path=$path/csx-b2b-$projectname
 echo "目录:$path,新项目:$projectname"
 
