@@ -23,7 +23,7 @@ fi
 ### 目录
 path=$(cd $(dirname $0); pwd)
 path=$path/csx-b2b-$projectname
-echo "目录:$path,新项目:$projectname"
+echo "当前目录:$path,新项目名:$projectname,脚手架版本:$version"
 
 ### 下载项目模板
 rm -rf csx-b2b-demo-${version}.tar.gz
