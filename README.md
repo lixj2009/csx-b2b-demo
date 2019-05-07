@@ -47,8 +47,8 @@ csx-b2b-demo
 * 回滚脚本: http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016a1092a2f5101a.html
 
 ## jenkins 部署示例
-* 正常: csx_环境_demo 
-* 回滚: csx_环境_demo_rollback
+* 正常: csx_dev_demo (dev是开发环境)
+* 回滚: csx_dev_demo_rollback
 
 ## sonar 代码质量检测集成示例
 * http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016a86812bf319e0.html

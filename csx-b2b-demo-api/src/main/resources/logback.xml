@@ -4,7 +4,7 @@
     <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
         <destination>10.252.193.3:4560</destination>
         <encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder" >
-            <customFields>{"appname":"csx-demo"}</customFields>
+            <customFields>{"appname":"csx-b2b-demo-api"}</customFields>
         </encoder>
     </appender>
 
