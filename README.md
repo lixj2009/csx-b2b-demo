@@ -6,7 +6,7 @@
 ## 通过脚手架初始化项目
 脚手架目录: /doc/client.sh
 ```
-# 使用说明: 
+# 使用说明: [windows 下面使用git bash运行]
 # curl -O  http://10.252.192.3/csx-public/csx-b2b-demo/raw/{分支名:默认master}/doc/client.sh
 # sh client.sh {项目名:默认demo,必填} {分支名:默认master,可不填}
 
