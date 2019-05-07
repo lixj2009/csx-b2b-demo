@@ -1,6 +1,6 @@
 #!/bin/bash
 projectname=$1
-path=$(pwd)
+path=$(cd $(dirname ${BASH_SOURCE[0]}); pwd)
 path=${path/\/doc/}
 echo "目录:$path,新项目:$projectname"
 cd $path
