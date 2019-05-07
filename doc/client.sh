@@ -1,14 +1,33 @@
 #!/bin/bash
+### 使用命令格式:
+### curl -O http://10.252.192.3/csx-public/csx-b2b-demo/raw/{version}/doc/client.sh
+### sh client.sh {projectname} {version}
+### 示范:
+### curl -O http://10.252.192.3/csx-public/csx-b2b-demo/raw/master/doc/client.sh
+### sh client.sh test
+### 
+### by 车江毅
+### 
+
 projectname=$1
+version=$2 #默认master
 path=$(cd $(dirname ${BASH_SOURCE[0]}); pwd)
 path=${path/\/doc/}
 echo "目录:$path,新项目:$projectname"
 cd $path
-### check
 if [[ $projectname == "" ]]; then
 	echo "错误: 请输入新项目名"
 	exit 0
 fi
+if [[ $version == "" ]]; then
+	version="master"
+fi
+### 下载项目模板
+rm -rf csx-b2b-demo-${version}.tar.gz
+curl -O http://10.252.192.3/csx-public/csx-b2b-demo/-/archive/${version}/csx-b2b-demo-${version}.tar.gz
+tar -zxvf csx-b2b-demo-${version}.tar.gz
+mv csx-b2b-demo-${version} csx-b2b-$projectname
+
 ###循环所有文件 替换com.yh.csx.demo
 function loopdic(){
   for f in `ls $1`
