@@ -3,6 +3,17 @@
 彩食鲜标准项目模板（脚手架）,所有的项目都必须按照这个项目模板构建。
 同时所有的第三方比如elk,cat,sharding-jdbc都会集成到这个项目结构中,并推广到各个项目中集成。
 
+## 通过脚手架初始化项目
+脚手架地址: /doc/client.sh
+```
+# 格式说明: 
+# curl -O  http://10.252.192.3/csx-public/csx-b2b-demo/raw/{分支名:默认master}/doc/client.sh
+# sh client.sh {项目名:默认demo,必填} {分支名:默认master,可不填}
+
+curl -O  http://10.252.192.3/csx-public/csx-b2b-demo/raw/master/doc/client.sh
+sh client.sh test
+```
+
 ## 项目结构说明
 ```
 csx-b2b-demo
