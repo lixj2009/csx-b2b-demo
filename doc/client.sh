@@ -4,6 +4,11 @@ path=$(cd $(dirname ${BASH_SOURCE[0]}); pwd)
 path=${path/\/doc/}
 echo "目录:$path,新项目:$projectname"
 cd $path
+### check
+if [[ $projectname == "" ]]; then
+	echo "错误: 请输入新项目名"
+	exit 0
+fi
 ###循环所有文件 替换com.yh.csx.demo
 function loopdic(){
   for f in `ls $1`
