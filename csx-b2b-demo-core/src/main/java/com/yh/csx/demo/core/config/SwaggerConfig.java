@@ -40,7 +40,7 @@ public class SwaggerConfig {
     private boolean enable;
     @Value("${swagger.title:'Swagger API'}")
     private String title;
-    @Value("${swagger.description}")
+    @Value("${swagger.description:''}")
     private String description;
     @Value("${swagger.version:'1.0'}")
     private String version;
