@@ -24,7 +24,7 @@ function loopdic(){
     fi
   done
 }
-#loopdic $path
+loopdic $path
 echo "完毕:循环所有文件 替换com.yh.csx.demo"
 
 ### 循环替换模块文件夹
