@@ -21,8 +21,8 @@ csx-b2b-demo
     -- csx-b2b-demo-dao #数据库操作
     -- csx-b2b-demo-service  #业务逻辑
     -- csx-b2b-demo-task #批处理任务
-    -- csx-b2b-demo-api  #api端接口
-    -- csx-b2b-demo-api-provider #api端第三方调用提供request，response类库
+    -- csx-b2b-demo-api  #api端第三方调用提供request，response类库
+    -- csx-b2b-demo-provider #api端接口实现
  -- doc #项目资料
  -- README.md #项目文档
 ```

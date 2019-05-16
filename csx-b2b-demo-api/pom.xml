@@ -9,54 +9,36 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>csx-b2b-demo-api</artifactId>
+	<artifactId>csx-b2b-demo-api-provider</artifactId>
 
-	<profiles>
-		<profile>
-			<id>dev</id>
-			<properties>
-				<profiles.active>dev</profiles.active>
-			</properties>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-		</profile>
-		<profile>
-			<id>test</id>
-			<properties>
-				<profiles.active>test</profiles.active>
-			</properties>
-		</profile>
-		<profile>
-			<id>prd</id>
-			<properties>
-				<profiles.active>prd</profiles.active>
-			</properties>
-		</profile>
-	</profiles>
 	<dependencies>
 		<dependency>
 			<groupId>com.yh.csx</groupId>
-			<artifactId>csx-b2b-demo-service</artifactId>
-			<version>${parent.version}</version>
+			<artifactId>csx-b2b-demo-core</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+	 	<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
 	</dependencies>
 	<build>
-		<resources>
-			<resource>
-				<directory>src/main/resources</directory>
-				<filtering>true</filtering>
-				<includes>
-					<include>application-${profiles.active}.properties</include>
-					<include>application.properties</include>
-					<include>logback.xml</include>
-				</includes>
-			</resource>
-		</resources>
 		<plugins>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>

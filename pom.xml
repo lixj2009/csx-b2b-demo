@@ -21,7 +21,7 @@
 		<module>csx-b2b-demo-dao</module>
 		<module>csx-b2b-demo-core</module>
 		<module>csx-b2b-demo-task</module>
-		<module>csx-b2b-demo-api-provider</module>
+		<module>csx-b2b-demo-provider</module>
 	</modules>
 
 	<properties>
