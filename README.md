@@ -18,10 +18,10 @@ sh client.sh test
 ```
 csx-b2b-demo
     -- csx-b2b-demo-core #公共代码
+    -- csx-b2b-demo-api  #api端第三方调用提供request，response类库
     -- csx-b2b-demo-dao #数据库操作
     -- csx-b2b-demo-service  #业务逻辑
     -- csx-b2b-demo-task #批处理任务
-    -- csx-b2b-demo-api  #api端第三方调用提供request，response类库
     -- csx-b2b-demo-provider #api端接口实现
  -- doc #项目资料
  -- README.md #项目文档
@@ -30,7 +30,6 @@ csx-b2b-demo
 ## mybatis代码生成参考知识库
 * http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e01685ef34d3000d4.html
 
-
 ## elk集成说明
 * http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016a6888a08918e1.html
   
@@ -38,8 +37,8 @@ csx-b2b-demo
 * http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016a47dd82761517.html
 
 ## 公开第三方接口给其他应用调用
-1. cd csx-b2b-demo-api-provider  #进入api-provider
-2. mvn clean install #编译api-provider
+1. cd csx-b2b-demo-api  #进入api
+2. mvn clean install #编译api
 3. mvn deploy  #部署到nesus 给第三方引用
 
 ## 安装部署目录结构标准

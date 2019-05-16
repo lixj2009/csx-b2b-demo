@@ -67,7 +67,7 @@ done
 echo "完毕:循环模块文件夹重命名所有demo目录"
 ### csx-b2b-demo-core
 
-### csx-b2b-demo-api-provider
+### csx-b2b-demo-api
 
 
 ### csx-b2b-demo-dao
@@ -79,7 +79,7 @@ echo "完毕:循环模块文件夹重命名所有demo目录"
 ### csx-b2b-demo-task
 
 
-### csx-b2b-demo-api
+### csx-b2b-demo-provider
 
 
 ### csx-b2b-demo
