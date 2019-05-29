@@ -36,6 +36,7 @@ public class CustomerController extends BaseController implements CustomerProvid
 	@GetMapping("/get")
 	public CommonResponse<CustomerDetailsResp> getCustomer(Long customerId) {
 		return super.visit(() -> {
+			log.info("aaaa");
 			Customer customer = customerService.getCustomer(customerId);
 			if (customer.getCooperationMode().equals(CooperationModeEnum.TEMP.getCode())
 					&& (customer.getCustomerStatus().equals(CustomerStatusEnum.PENDING.getCode()) || customer.getCustomerStatus().equals(CustomerStatusEnum.REJECT.getCode()))) {
