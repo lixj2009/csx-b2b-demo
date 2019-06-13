@@ -9,6 +9,10 @@ import org.springframework.stereotype.Component;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * 任务调度的任务使用示例
+ * 参考文档: http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016adfd16d861465.html
+ */
 @Slf4j
 @Component
 @JobHandler("DemoTask")

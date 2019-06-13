@@ -53,9 +53,14 @@
 			<dependency>
 				<groupId>com.yh.csx.bsf</groupId>
 				<artifactId>csx-bsf-dependencies</artifactId>
-				<version>1.5.2-SNAPSHOT</version>
+				<version>1.5.3-SNAPSHOT</version>
 				<type>pom</type>
 				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.yh.csx.bsf</groupId>
+				<artifactId>csx-bsf-starter</artifactId>
+				<version>1.5.3-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.mybatis.spring.boot</groupId>

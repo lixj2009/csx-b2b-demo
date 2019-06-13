@@ -1,7 +1,10 @@
 # csx-b2b-demo
 
-彩食鲜标准项目模板（脚手架）,所有的项目都必须按照这个项目模板构建。
-同时所有的第三方比如elk,cat,sharding-jdbc都会集成到这个项目结构中,并推广到各个项目中集成。
+彩食鲜标准项目模板（脚手架）,所有的后端java项目都必须按照这个项目模板构建。
+* 标准化项目结构:定义标准的项目分层结构,便于技术资源共享和交叉业务协作开发。
+* 标准化技术选型:定义标准的分布式技术选型,便于运维人员统一维护,同时简化使用和统一性能监控和优化。
+* 愿景：业务开发只关注业务需求,专注编写业务代码; 对于技术只关注使用,不需要关注基础服务的集成和相关配置(因为所有都已经集成完毕)。
+       
 
 ## 通过脚手架初始化项目
 脚手架目录: /doc/client.sh
@@ -17,21 +20,24 @@ sh client.sh test
 ## 项目结构说明
 ```
 csx-b2b-demo
-    -- csx-b2b-demo-core #公共代码
-    -- csx-b2b-demo-api  #api端第三方调用提供request，response类库
-    -- csx-b2b-demo-dao #数据库操作
-    -- csx-b2b-demo-service  #业务逻辑
-    -- csx-b2b-demo-task #批处理任务
-    -- csx-b2b-demo-provider #api端接口实现
- -- doc #项目资料
- -- README.md #项目文档
+    -- csx-b2b-demo-core #公共代码 （核心层）
+    -- csx-b2b-demo-api  #api端第三方调用提供request，response类库 （api协议层）
+    -- csx-b2b-demo-dao #数据库操作 （数据层）
+    -- csx-b2b-demo-service  #业务逻辑 （服务层）
+    -- csx-b2b-demo-task #批处理任务 （任务层）
+    -- csx-b2b-demo-provider #api端接口实现（api实现层，提供者模式）
+ -- doc #项目资料 （文档资料）
+ -- README.md #项目文档 （说明文档）
 ```
 
-## mybatis代码生成参考知识库
-* http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e01685ef34d3000d4.html
+## 项目开发人员（必读） -- 新员工培训手册
+http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e0168a820df7803f7.html
 
-## elk集成说明
-* http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016a6888a08918e1.html
+## 项目开发和线上环境说明
+http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016ab3f557fd258c.html
+
+## mybatis代码自动生成参考知识库
+* http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e01685ef34d3000d4.html
   
 ## pinpoint 部署集成探针示例
 * http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016a47dd82761517.html

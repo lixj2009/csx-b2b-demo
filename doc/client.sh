@@ -1,11 +1,12 @@
 #!/bin/bash
+### 用途: 标准彩食鲜项目脚手架生成脚本
 ### 使用命令格式:
 ### curl -O http://10.252.192.3/csx-public/csx-b2b-demo/raw/{version}/doc/client.sh
 ### sh client.sh {projectname} {version}
 ### 示范:
 ### curl -O http://10.252.192.3/csx-public/csx-b2b-demo/raw/master/doc/client.sh
 ### sh client.sh test
-### 
+###
 ### by 车江毅
 ### 
 
