@@ -22,8 +22,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableDubboConfiguration
 @MapperScan(basePackages = "com.yh.csx.demo.dao")
 @ComponentScan(basePackages = "com.yh.csx.demo")
-@EnableEurekaClient
-@EnableFeignClients
 public class Application {
     public static void main(String[] args) {
 
