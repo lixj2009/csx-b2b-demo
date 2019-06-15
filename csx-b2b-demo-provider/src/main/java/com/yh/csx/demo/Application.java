@@ -7,10 +7,12 @@ package com.yh.csx.demo; /**
 
 import com.alibaba.dubbo.spring.boot.annotation.EnableDubboConfiguration;
 import com.alibaba.dubbo.spring.boot.context.event.DubboBannerApplicationListener;
+import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
@@ -19,6 +21,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableDubboConfiguration
 @MapperScan(basePackages = "com.yh.csx.demo.dao")
 @ComponentScan(basePackages = "com.yh.csx.demo")
+@EnableEurekaClient
 public class Application {
     public static void main(String[] args) {
 

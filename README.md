@@ -42,6 +42,27 @@ http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016ab3f557fd258c.html
 ## pinpoint 部署集成探针示例
 * http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016a47dd82761517.html
 
+## elk集成文档(默认已集成并开启)
+* http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016a6888a08918e1.html
+
+## cat集成文档（默认已集成并开启）
+* http://10.252.192.10:8080/webdoc/view/Pubff8080816aff1991016b59439508742f.html
+
+## job集成文档(默认已集成并开启)
+* http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016adfd16d861465.html
+
+## message 消息集成文档（默认已集成并开启）
+* 短信: http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016ac55bd8871e6e.html
+
+## mq 消息队列集成文档（默认已集成并开启）
+* rocketmq: http://10.252.192.10:8080/webdoc/view/Pubff8080816aff1991016b500707553c73.html
+
+## apollo 配置中心集成文档（默认已集成并开启）
+* http://10.252.192.10:8080/webdoc/view/Pubff8080816aff1991016b593af2753365.html
+
+## sharding-jdbc 集成文档 （默认已集成,但关闭）
+* http://10.252.192.10:8080/webdoc/view/Pubff8080816aff1991016b594a7a342c31.html
+
 ## 公开第三方接口给其他应用调用
 1. cd csx-b2b-demo-api  #进入api
 2. mvn clean install #编译api
