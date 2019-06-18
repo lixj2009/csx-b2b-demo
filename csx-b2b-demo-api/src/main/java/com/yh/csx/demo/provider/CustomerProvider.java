@@ -11,7 +11,7 @@ import com.yh.csx.demo.model.request.CustomerAddReq;
 import com.yh.csx.demo.model.response.CustomerDetailsResp;
 
 // 使用Feign的@FeignClient(“服务名称”)映射服务调用
-@FeignClient(value = "demo-api", path = "/customer")
+@FeignClient(value = "csx-b2b-demo", path = "/customer")
 public interface CustomerProvider {
 
 	// 服务中方法的映射路径,确保参数一致

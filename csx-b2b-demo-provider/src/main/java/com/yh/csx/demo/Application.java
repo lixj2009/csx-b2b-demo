@@ -8,6 +8,8 @@ package com.yh.csx.demo; /**
 
 import com.alibaba.dubbo.spring.boot.annotation.EnableDubboConfiguration;
 import com.alibaba.dubbo.spring.boot.context.event.DubboBannerApplicationListener;
+import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
+import lombok.val;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
@@ -27,6 +29,8 @@ public class Application {
     public static void main(String[] args) {
 
         DubboBannerApplicationListener.setBANNER_MODE(Banner.Mode.OFF);
-        SpringApplication.run(Application.class, args);
+        val context = SpringApplication.run(Application.class, args);
+        String a = context.getEnvironment().getProperty("test");
+        int b=0;
     }
 }
