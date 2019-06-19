@@ -17,6 +17,18 @@ curl -O  http://10.252.192.3/csx-public/csx-b2b-demo/raw/master/doc/client.sh
 sh client.sh test
 ```
 
+## 通过自动化部署脚本部署环境
+自动化部署脚本目录: /doc/jenkins-client.sh
+自动部署jenkins环境+ssh主机登陆,自动部署web api server（支持2台负载均衡,不包含java sdk安装）
+```
+# 使用说明: [windows 下面使用git bash运行]
+# curl -O  http://10.252.192.3/csx-public/csx-b2b-demo/raw/{分支名:默认master}/doc/jenkins-client.sh
+# sh jenkins-client.sh
+
+curl -O  http://10.252.192.3/csx-public/csx-b2b-demo/raw/master/doc/jenkins-client.sh
+sh jenkins-client.sh
+```
+
 ## 项目结构说明
 ```
 csx-b2b-demo
