@@ -90,8 +90,8 @@ http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016ab3f557fd258c.html
 ```
 /home/web #线上部署目录结构说明,用户web,默认目录归属web用户
     -- jenkins-publish #jenkins自动上传jar的目录
-    -- demo #项目demo目录
-        -- csx-b2b-demo-webapi-1.0-SNAPSHOT.jar #spring-boot 服务集合打包jar
+    -- demo-provider #项目demo-provider目录
+        -- csx-b2b-demo-provider-1.0-SNAPSHOT.jar #spring-boot 服务集合打包jar
         -- start.sh #项目start 启动脚本 详情如下
         -- backup #jar 包备份
         -- rollback.sh #项目rollback 回滚脚本 详情如下
