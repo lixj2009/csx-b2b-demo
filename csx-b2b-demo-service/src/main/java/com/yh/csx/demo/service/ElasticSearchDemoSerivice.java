@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
 
 import com.google.common.collect.Lists;
 import com.yh.csx.bsf.es.impl.ElasticSearchSqlProvider;
@@ -12,7 +11,8 @@ import com.yh.csx.demo.model.vo.UserVo;
 
 /**
  * ElasticSearchSql 使用示范
- * ElasticSearchSql 使用文档:http://10.252.192.10:8080/webdoc/view/Pubff8080816aff1991016b500707553c73.html
+ * 
+ * https://github.com/NLPchina/elasticsearch-sql
  **/
 @Service
 public class ElasticSearchDemoSerivice {
@@ -27,7 +27,6 @@ public class ElasticSearchDemoSerivice {
 	}
     
     // 查询type下的数据  SELECT * FROM indexName/type
-    @GetMapping("/selectByType")
     public Object selectByType() {
     	List<UserVo> result = searchService.searchBySql("select * from aaa/bbb", UserVo.class);
     	return result;
