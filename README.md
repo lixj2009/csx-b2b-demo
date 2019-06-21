@@ -28,7 +28,12 @@ sh client.sh test
 curl -O  http://10.252.192.3/csx-public/csx-b2b-demo/raw/master/doc/jenkins-client.sh
 sh jenkins-client.sh
 ```
-
+## 项目git分支管理说明
+```
+jenkins 一般发布的分支为test,prd 两个分支
+/test 测试发布分支(所有新版本合并到最新的测试版本的分支)
+/prd 线上发布分支(所有待发布版本合并到最新的发布版本的分支)
+```
 ## 项目结构说明
 ```
 csx-b2b-demo
