@@ -83,6 +83,9 @@ http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016ab3f557fd258c.html
 ## eureka 注册中心 (默认已集成并开启)
 * http://10.252.192.10:8080/webdoc/view/Pubff8080816aff1991016b5aa3c67c0f86.html
 
+## redis缓存集成文档（默认已集成并开启）
+* http://10.252.192.10:8080/webdoc/view/Pubff8080816aff1991016b788cad130b5f.html
+
 ## 公开第三方接口给其他应用调用
 1. cd csx-b2b-demo-api  #进入api
 2. mvn clean install #编译api
