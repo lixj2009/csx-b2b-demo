@@ -1,17 +1,15 @@
 package com.yh.csx.demo.model.request;
 
-import java.math.BigDecimal;
-import java.util.Date;
-import java.util.List;
-
-import javax.validation.constraints.Size;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
-
-import com.yh.csx.bsf.core.model.UploadFile;
+import com.yh.csx.demo.model.vo.UploadFile;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.ToString;
+
+import javax.validation.constraints.Size;
+import java.math.BigDecimal;
+import java.util.Date;
+import java.util.List;
 
 @Data
 @ToString
