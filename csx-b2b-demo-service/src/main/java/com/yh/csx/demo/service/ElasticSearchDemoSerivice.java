@@ -11,8 +11,10 @@ import com.yh.csx.demo.model.vo.UserVo;
 
 /**
  * ElasticSearchSql 使用示范
- * 
+ *  sql 形式的 elasticsearch 使用封装
  * https://github.com/NLPchina/elasticsearch-sql
+ * 内部文档: http://10.252.192.10:8080/webdoc/view/Pubff8080816aff1991016b7937b16035f1.html
+ * 测试环境调试: http://10.252.192.41:8080/
  **/
 @Service
 public class ElasticSearchDemoSerivice {
