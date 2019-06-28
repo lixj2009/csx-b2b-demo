@@ -11,16 +11,11 @@ import com.yh.csx.demo.model.request.CustomerAddReq;
 import com.yh.csx.demo.model.response.CustomerDetailsResp;
 
 // 使用Feign的@FeignClient(“服务名称”)映射服务调用
-@FeignClient(path = "/api/customer",name = "csx-b2b-demo-provider")
-public interface CustomerProvider {
+@FeignClient(name = "csx-b2b-demo-provider", path = "/api")
+public interface ErrorProvider {
 
 	// 服务中方法的映射路径,确保参数一致
-	@GetMapping("/get")
-	CommonResponse<CustomerDetailsResp> getCustomer(@RequestParam("customerId") Long customerId);
-
-	@PostMapping("/enable")
-	CommonResponse enable(@RequestParam("customerId") Long customerId, @RequestParam("enable") Boolean enable);
-
-	@PostMapping("/add")
-	CommonResponse addCustomer(@RequestBody CustomerAddReq req);
+	@GetMapping("/callBiz")
+	CommonResponse<String> callBiz();
 }
+
