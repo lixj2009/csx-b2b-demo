@@ -15,11 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class ErrorController {
 
     @GetMapping("/callBiz")
-    public CommonResponse<User> callBiz(long userId) throws Exception {
-        if (userId != 10) {
-            throw new BusinessException("你大爷的错误了");
-        }
-        return CommonResponse.success();
+    public CommonResponse<String> callBiz() throws Exception {
+        return CommonResponse.success("你大爷的错误了");
     }
 
     @GetMapping("/callError")
