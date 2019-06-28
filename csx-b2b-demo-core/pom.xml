@@ -16,10 +16,7 @@
 			<artifactId>csx-b2b-demo-api</artifactId>
 			<version>${project.parent.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>com.alibaba.spring.boot</groupId>
-			<artifactId>dubbo-spring-boot-starter</artifactId>
-		</dependency>
+
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
@@ -44,14 +41,19 @@
 			<groupId>com.alibaba</groupId>
 			<artifactId>easyexcel</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>dubbo</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.101tec</groupId>
-			<artifactId>zkclient</artifactId>
-		</dependency>
+		<!--永辉原有dubbo兼容使用的几个包-->
+		<!--<dependency>-->
+			<!--<groupId>com.alibaba.spring.boot</groupId>-->
+			<!--<artifactId>dubbo-spring-boot-starter</artifactId>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+			<!--<groupId>com.alibaba</groupId>-->
+			<!--<artifactId>dubbo</artifactId>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+			<!--<groupId>com.101tec</groupId>-->
+			<!--<artifactId>zkclient</artifactId>-->
+		<!--</dependency>-->
 	</dependencies>
 
 </project>

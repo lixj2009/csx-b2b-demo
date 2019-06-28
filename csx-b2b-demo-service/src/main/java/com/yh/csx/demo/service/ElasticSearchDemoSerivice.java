@@ -19,7 +19,7 @@ import com.yh.csx.demo.model.vo.UserVo;
 @Service
 public class ElasticSearchDemoSerivice {
 
-	@Autowired
+	@Autowired(required = false)
 	private ElasticSearchSqlProvider searchService;
 	
 	// 查询index下的数据

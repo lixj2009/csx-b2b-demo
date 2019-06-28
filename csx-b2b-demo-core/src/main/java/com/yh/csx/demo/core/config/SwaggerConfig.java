@@ -1,12 +1,16 @@
 package com.yh.csx.demo.core.config;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.Type;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import com.google.common.base.Predicate;
+import com.google.common.base.Predicates;
+import lombok.val;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,6 +19,8 @@ import com.google.common.base.Optional;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.web.bind.annotation.RestController;
+import springfox.documentation.RequestHandler;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.ApiListingBuilder;
 import springfox.documentation.builders.PathSelectors;
@@ -48,6 +54,24 @@ public class SwaggerConfig {
 
     @Bean
     public Docket customDocket() {
+//        Predicate<RequestHandler> predicate = new Predicate<RequestHandler>() {
+//            @Override
+//            public boolean apply(RequestHandler input) {
+//
+//                //只有添加了ApiOperation注解的method才在API中显示
+//                if (input.isAnnotatedWith(ApiOperation.class)&&
+//                        input.findControllerAnnotation(Api.class).isPresent()&&
+//                        input.findControllerAnnotation(RestController.class).isPresent())
+//                {
+//                    System.out.println(input.declaringClass().getName());
+//                    return true;
+//                }
+//
+//                return false;
+//            }
+//        };
+
+
         return new Docket(DocumentationType.SWAGGER_2)
                 .enable(enable)
                 .apiInfo(apiInfo())
@@ -56,6 +80,7 @@ public class SwaggerConfig {
                 .securityContexts(securityContexts())
                 .select()
                 .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
+                //.apis(Requ)
                 .paths(PathSelectors.any())
                 .build();
     }
@@ -91,6 +116,17 @@ public class SwaggerConfig {
                 return;
             }
             Api api = optional.get().getAnnotation(Api.class);
+            //兼容继承模式的swagger生成
+            if(api == null) {
+                Type[] types = optional.get().getGenericInterfaces();
+                if (types != null && types.length > 0) {
+                    val type = Arrays.stream(types).filter(c ->((Class)c).getAnnotation(Api.class)!=null).findFirst();
+                    if(type.isPresent())
+                    {
+                        api = (Api)((Class)type.get()).getAnnotation(Api.class);
+                    }
+                }
+            }
             if (api == null || api.value().length() == 0 || (api.tags().length == 0 && api.tags()[0].length() == 0)) {
                 return;
             }

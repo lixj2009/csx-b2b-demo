@@ -1,10 +1,9 @@
-package com.yh.csx.demo;
+package com.yh.csx.demo.eureka;
 
 import com.yh.csx.demo.model.request.CustomerAddReq;
 import com.yh.csx.demo.provider.CustomerProvider;
 import lombok.val;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Required;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
@@ -15,12 +14,13 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * Eureka client 调用其他客户端 api示例
  * 注意要配合properties 的配置使用
  **/
-@SpringBootApplication
+/****************调试时候去掉SpringBootApplication注释*************/
+//@SpringBootApplication
 /**
  * 【关键配置】需要使用的项目api 协议类,一般放provider包下面;多个项目则配置多个
  * 注意:spring.main.allow-bean-definition-overriding=true 必须要配置否则会报错
  */
-@EnableFeignClients(basePackages = {"com.yh.csx.demo.provider"})//"com.yh.csx.ucenter.provider"
+@EnableFeignClients(basePackages = {"com.yh.csx.demo.provider"})//"com.yh.csx.ucenter.provider","com.yh.csx.demo.provider"
 public class EurekaApplication {
     /**
      * 获取注入对象方式一

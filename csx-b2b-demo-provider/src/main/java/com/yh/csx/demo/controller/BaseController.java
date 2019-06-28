@@ -5,9 +5,9 @@ import java.util.concurrent.Callable;
 import com.yh.csx.bsf.core.entity.CommonResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
-
-
+@RestController
 public abstract class BaseController {
 
     protected Logger log = LoggerFactory.getLogger(this.getClass());

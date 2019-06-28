@@ -25,17 +25,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.math.BigDecimal;
 
+/**
+ * eureka api contoller 服务注册的例子
+ * 参考文档:
+ */
 @Slf4j
-@Api("客户管理服务")
 @RestController
-@RequestMapping("/customer")
 public class CustomerController extends BaseController implements CustomerProvider {
 
 	@Autowired
 	private CustomerService customerService;
 
-	@ApiOperation("获取客户信息")
-	@GetMapping("/get")
 	public CommonResponse<CustomerDetailsResp> getCustomer(Long customerId) {
 		return super.visit(() -> {
 			log.info("aaaa");
@@ -54,16 +54,13 @@ public class CustomerController extends BaseController implements CustomerProvid
 		});
 	}
 
-	@ApiOperation("禁用/启用")
-	@PostMapping("/enable")
+
 	public CommonResponse enable(Long customerId, Boolean enable) {
 		return super.visit(() -> {
 			customerService.enable(super.getUserName(), customerId, enable);
 		});
 	}
 
-	@ApiOperation("新增客户(保存草稿)")
-	@PostMapping("/add")
 	public CommonResponse addCustomer(@RequestBody @Validated CustomerAddReq req) {
 		return super.visit(() -> {
 			if (log.isDebugEnabled()) {
