@@ -54,6 +54,7 @@ http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e0168a820df7803f7.html
 http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016ab3f557fd258c.html
 
 ## mybatis代码自动生成参考知识库
+生成器目录:/doc/mybatis-generator.zip
 * http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e01685ef34d3000d4.html
   
 ## pinpoint 部署集成探针示例

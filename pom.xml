@@ -38,6 +38,12 @@
 				<version>1.5.4-SNAPSHOT</version>
 			</dependency>
 			<!--bsf 内部依赖-->
+			<!--解决yh(永辉) dubbo 版本兼容问题-->
+			<!--<dependency>-->
+				<!--<groupId>com.alibaba</groupId>-->
+				<!--<artifactId>dubbo</artifactId>-->
+				<!--<version>yh2.5.7</version>-->
+			<!--</dependency>-->
 		</dependencies>
 	</dependencyManagement>
 
