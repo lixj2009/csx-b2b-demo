@@ -22,12 +22,17 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 //@EnableScheduling
+/**
+ * 为了dubbo 客户端兼容
+ */
 @EnableDubboConfiguration
 @MapperScan(basePackages = "com.yh.csx.demo.dao")
 @ComponentScan(basePackages = "com.yh.csx.demo")
 public class Application {
     public static void main(String[] args) {
-
+        /**
+         * dubbo 客户端使用兼容
+         */
         DubboBannerApplicationListener.setBANNER_MODE(Banner.Mode.OFF);
         val context = SpringApplication.run(Application.class, args);
         String a = context.getEnvironment().getProperty("test");

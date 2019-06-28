@@ -37,8 +37,8 @@ jenkins 一般发布的分支为test,prd 两个分支
 ## 项目结构说明
 ```
 csx-b2b-demo
-    -- csx-b2b-demo-core #公共代码 （核心层）
     -- csx-b2b-demo-api  #api端第三方调用提供request，response类库 （api协议层）
+    -- csx-b2b-demo-core #公共代码 （核心层）
     -- csx-b2b-demo-dao #数据库操作 （数据层）
     -- csx-b2b-demo-service  #业务逻辑 （服务层）
     -- csx-b2b-demo-task #批处理任务 （任务层）
@@ -60,40 +60,44 @@ http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016ab3f557fd258c.html
 ## pinpoint 部署集成探针示例
 * http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016a47dd82761517.html
 
-## elk集成文档(默认已集成并开启)
+## elk集成文档(默认已集成并关闭)
 * http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016a6888a08918e1.html
 
-## cat集成文档（默认已集成并开启）
+## cat集成文档（默认已集成并关闭）
 * http://10.252.192.10:8080/webdoc/view/Pubff8080816aff1991016b59439508742f.html
 
-## job集成文档(默认已集成并开启)
+## job集成文档(默认已集成并关闭)
 * http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016adfd16d861465.html
 
-## message 消息集成文档（默认已集成并开启）
+## message 消息集成文档（默认已集成并关闭）
 * 短信: http://10.252.192.10:8080/webdoc/view/Pubff808081685d412e016ac55bd8871e6e.html
 
-## mq 消息队列集成文档（默认已集成并开启）
+## mq 消息队列集成文档（默认已集成并关闭）
 * rocketmq: http://10.252.192.10:8080/webdoc/view/Pubff8080816aff1991016b500707553c73.html
 
-## apollo 配置中心集成文档（默认已集成并开启）
+## apollo 配置中心集成文档（默认已集成并关闭）
 * http://10.252.192.10:8080/webdoc/view/Pubff8080816aff1991016b593af2753365.html
 
 ## sharding-jdbc 集成文档 （默认已集成,但关闭）
 * http://10.252.192.10:8080/webdoc/view/Pubff8080816aff1991016b594a7a342c31.html
 
-## eureka 注册中心 (默认已集成并开启)
+## eureka 注册服务 (默认已集成并关闭)
 * http://10.252.192.10:8080/webdoc/view/Pubff8080816aff1991016b5aa3c67c0f86.html
 
-## redis缓存集成文档（默认已集成并开启）
+## eureka 调用其他项目api集成 (默认已集成并关闭)
+* http://10.252.192.10:8080/webdoc/view/Pubff8080816aff1991016b9cc99535234d.html
+
+## redis缓存集成文档（默认已集成并关闭）
 * http://10.252.192.10:8080/webdoc/view/Pubff8080816aff1991016b788cad130b5f.html
 
-## elasticsearch-sql集成文档（默认已集成并开启）
+## elasticsearch-sql集成文档（默认已集成并关闭）
 * http://10.252.192.10:8080/webdoc/view/Pubff8080816aff1991016b7937b16035f1.html
 
 ## 公开第三方接口给其他应用调用
 1. cd csx-b2b-demo-api  #进入api
 2. mvn clean install #编译api
 3. mvn deploy  #部署到nesus 给第三方引用
+备注: 如果项目根pom文件有更新则还需要发布根pom文件(一般这里会定义jar版本号)
 
 ## 安装部署目录结构标准
 ```

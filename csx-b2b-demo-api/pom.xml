@@ -11,13 +11,6 @@
 
 	<artifactId>csx-b2b-demo-api</artifactId>
 
-	<dependencies>
-		<dependency>
-			<groupId>com.yh.csx</groupId>
-			<artifactId>csx-b2b-demo-core</artifactId>
-			<version>${project.parent.version}</version>
-		</dependency>
-	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
