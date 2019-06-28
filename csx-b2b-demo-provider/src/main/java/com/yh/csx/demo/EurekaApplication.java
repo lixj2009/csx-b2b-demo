@@ -18,6 +18,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 /**
  * 【关键配置】需要使用的项目api 协议类,一般放provider包下面;多个项目则配置多个
+ * 注意:spring.main.allow-bean-definition-overriding=true 必须要配置否则会报错
  */
 @EnableFeignClients(basePackages = {"com.yh.csx.demo.provider"})//"com.yh.csx.ucenter.provider"
 public class EurekaApplication {
