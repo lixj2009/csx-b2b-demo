@@ -25,7 +25,6 @@
 	</modules>
 
 	<properties>
-		<business.version>1.0-SNAPSHOT</business.version>
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -36,12 +35,12 @@
 			<dependency>
 				<groupId>com.yh.csx.business</groupId>
 				<artifactId>csx-business-starter</artifactId>
-				<version>${business.version}</version>
+				<version>${project.parent.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.yh.csx.business</groupId>
 				<artifactId>csx-business-api</artifactId>
-				<version>${business.version}</version>
+				<version>${project.parent.version}</version>
 			</dependency>
 			<!--bsf 内部依赖-->
 			<!--解决yh(永辉) dubbo 版本兼容问题-->
