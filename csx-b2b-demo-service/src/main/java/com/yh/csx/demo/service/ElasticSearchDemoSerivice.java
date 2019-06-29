@@ -2,6 +2,8 @@ package com.yh.csx.demo.service;
 
 import java.util.List;
 
+import com.yh.csx.bsf.es.base.ElasticSearchAware;
+import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +20,14 @@ import com.yh.csx.demo.model.vo.UserVo;
  **/
 @Service
 public class ElasticSearchDemoSerivice {
+
+	@Data
+	public static class UserVo2 extends UserVo implements ElasticSearchAware
+	{
+		public UserVo2(String id, String name) {
+			super(id,name);
+		}
+	}
 
 	@Autowired(required = false)
 	private ElasticSearchSqlProvider searchService;
@@ -43,13 +53,13 @@ public class ElasticSearchDemoSerivice {
     // 官方推荐bulkSize设置为1000-5000,根据数据对象的大小看情况调整
     // bulkSize默认值为2000
     public void insertOrUpdate() {
-    	List<UserVo> result = Lists.newArrayList();
+    	List<UserVo2> result = Lists.newArrayList();
     	// insert or update
-    	result.add(new UserVo("-1", "demo1"));
+    	result.add(new UserVo2("-1", "demo1"));
     	// insert or update
-    	result.add(new UserVo("1", "demo2"));
+    	result.add(new UserVo2("1", "demo2"));
     	// insert
-    	result.add(new UserVo(null, "demo3"));
+    	result.add(new UserVo2(null, "demo3"));
     	searchService.insertData("aaa", "bbb", result);
     }
     

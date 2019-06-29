@@ -2,12 +2,12 @@ package com.yh.csx.demo.model.qo;
 
 import java.util.List;
 
-import com.yh.csx.bsf.core.entity.Pagination;
+import com.yh.csx.business.api.entity.Pagination;
 import lombok.Data;
+
 
 @Data
 public class CustomerQo extends Pagination {
-
 	private Long id;
 	private String customerNumber;
 	private String regionProvinceName;

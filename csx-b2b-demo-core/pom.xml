@@ -11,12 +11,20 @@
 
 	<artifactId>csx-b2b-demo-core</artifactId>
 	<dependencies>
+
 		<dependency>
 			<groupId>com.yh.csx</groupId>
 			<artifactId>csx-b2b-demo-api</artifactId>
 			<version>${project.parent.version}</version>
 		</dependency>
-
+		<dependency>
+			<groupId>com.yh.csx.business</groupId>
+			<artifactId>csx-business-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>

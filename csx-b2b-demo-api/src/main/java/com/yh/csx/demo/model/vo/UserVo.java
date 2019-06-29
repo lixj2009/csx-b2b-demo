@@ -1,8 +1,6 @@
 package com.yh.csx.demo.model.vo;
 
-import com.yh.csx.bsf.es.base.ElasticSearchAware;
-
-public class UserVo implements ElasticSearchAware{
+public class UserVo {
 
 	private String id;
 	private String name;

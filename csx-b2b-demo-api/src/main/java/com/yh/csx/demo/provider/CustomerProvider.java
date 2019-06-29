@@ -1,11 +1,11 @@
 package com.yh.csx.demo.provider;
 
+import com.yh.csx.business.api.entity.CommonResponse;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
-import com.yh.csx.bsf.core.entity.CommonResponse;
 import com.yh.csx.demo.model.request.CustomerAddReq;
 import com.yh.csx.demo.model.response.CustomerDetailsResp;
 

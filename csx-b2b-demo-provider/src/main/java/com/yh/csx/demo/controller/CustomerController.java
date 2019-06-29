@@ -1,8 +1,8 @@
 package com.yh.csx.demo.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.yh.csx.bsf.core.entity.CommonResponse;
-import com.yh.csx.bsf.core.util.BeanUtils;
+import com.yh.csx.business.api.entity.CommonResponse;
+import com.yh.csx.business.core.util.BeanUtils;
 import com.yh.csx.demo.model.enums.CooperationModeEnum;
 import com.yh.csx.demo.model.enums.CustomerStatusEnum;
 import com.yh.csx.demo.model.po.Customer;

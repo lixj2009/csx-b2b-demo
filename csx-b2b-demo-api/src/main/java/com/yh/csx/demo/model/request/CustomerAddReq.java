@@ -6,7 +6,6 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.ToString;
 
-import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
@@ -34,11 +33,11 @@ public class CustomerAddReq {
     @ApiModelProperty("客户分类ID")
     private Integer customerCategoryId;
 
-    @Size(max = 2, message = "档案分类超过最大长度")
+    //@Size(max = 2, message = "档案分类超过最大长度")
     @ApiModelProperty("档案分类 01法人，02政府/事业单位，03军队，04其他非法人，05一次性客户'")
     private String archiveCategory;
 
-    @Size(max = 2, message = "合作模式超过最大长度")
+    //@Size(max = 2, message = "合作模式超过最大长度")
     @ApiModelProperty("合作模式 01长期客户 02临时客户")
     private String cooperationMode;
 
@@ -57,7 +56,7 @@ public class CustomerAddReq {
     @ApiModelProperty("注册资本")
     private String registeredCapital;
 
-    @Size(max = 11, message = "联系电话超过最大长度")
+    //@Size(max = 11, message = "联系电话超过最大长度")
     @ApiModelProperty("联系电话")
     private String phone;
 
@@ -70,7 +69,7 @@ public class CustomerAddReq {
     @ApiModelProperty("国家")
     private String countryCode;
 
-    @Size(max = 6, message = "邮政编码超过最大长度")
+    //@Size(max = 6, message = "邮政编码超过最大长度")
     @ApiModelProperty("邮政编码")
     private String postCode;
 
@@ -118,15 +117,15 @@ public class CustomerAddReq {
     @ApiModelProperty("公司代码")
     private String companyCode;
 
-    @Size(max = 4, message = "付款条件超过最大长度")
+    //@Size(max = 4, message = "付款条件超过最大长度")
     @ApiModelProperty("付款条件")
     private String paymentTerms;
 
-    @Size(max = 2, message = "支付方式超过最大长度")
+    //@Size(max = 2, message = "支付方式超过最大长度")
     @ApiModelProperty("支付方式 01转账、02现金（刷卡）、03支票、04信控、05账扣")
     private String payMode;
 
-    @Size(max = 2, message = "账期超过最大长度")
+    //@Size(max = 2, message = "账期超过最大长度")
     @ApiModelProperty("账期 01（无账期），02（7天），03（15天），04（30天），05（45天），06（60天），07（90天）")
     private String paymentDays;
 
@@ -149,7 +148,7 @@ public class CustomerAddReq {
     @ApiModelProperty("业务对接人姓名")
     private String salesUserName;
 
-    @Size(max = 2, message = "祱分类超过最大长度")
+    //@Size(max = 2, message = "祱分类超过最大长度")
     @ApiModelProperty("祱分类")
     private String taxesCategory;
 
@@ -157,7 +156,7 @@ public class CustomerAddReq {
     private String salesProvince;
 
     /*信控信息*/
-    @Size(max = 2, message = "客户级别超过最大长度")
+    //@Size(max = 2, message = "客户级别超过最大长度")
     @ApiModelProperty("客户级别")
     private String customerLevel;
 
