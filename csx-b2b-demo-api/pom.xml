@@ -12,22 +12,26 @@
 	<artifactId>csx-b2b-demo-api</artifactId>
 	<dependencies>
 		<!--只允许使用business-api,不要再使用其他的bsf或business框架，保证其他业务不会产生大量依赖-->
+		<!--业务协议定义-->
 		<dependency>
 			<groupId>com.yh.csx.business</groupId>
 			<artifactId>csx-business-api</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<scope>provided</scope>
-		</dependency>
+		<!--feginclient-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-openfeign-core</artifactId>
 		</dependency>
+		<!--swagger注释-->
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
+		</dependency>
+		<!--用于代码简写,注意provided-->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 	<build>
