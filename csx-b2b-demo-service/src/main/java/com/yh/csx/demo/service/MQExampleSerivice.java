@@ -32,6 +32,6 @@ public class MQExampleSerivice {
 
     public void sendMessage() {
         //发送消息
-        rocketMQProducerProvider.sendMessage("csx-bsf-demo-test","测试"+ System.currentTimeMillis());
+        rocketMQProducerProvider.sendMessage("csx-bsf-demo-test",null,"测试"+ System.currentTimeMillis());
     }
 }
