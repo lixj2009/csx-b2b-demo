@@ -23,7 +23,7 @@ public class MQExampleSerivice {
 
     public void registerConsumer(){
         //订阅消息
-        rocketMQConsumerProvider.subscribe("csx-bsf-demo-test-consumer-01","csx-bsf-demo-test",(msg)->{
+        rocketMQConsumerProvider.subscribe("csx-bsf-demo-test-consumer-01","csx-bsf-demo-test",null,(msg)->{
             System.out.println(msg);
         },String.class);
 
