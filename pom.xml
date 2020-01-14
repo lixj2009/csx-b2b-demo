@@ -7,7 +7,7 @@
 	<parent>
 		<groupId>com.yh.csx.business</groupId>
 		<artifactId>csx-business-dependencies</artifactId>
-		<version>1.5.5.1-SNAPSHOT</version>
+		<version>1.5.9.2-SNAPSHOT</version>
 		<relativePath />
 	</parent>
 
@@ -27,7 +27,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<business.version>1.5.5.1-SNAPSHOT</business.version>
+		<business.version>1.5.9.2-SNAPSHOT</business.version>
 	</properties>
 
 	<dependencyManagement>
@@ -43,13 +43,6 @@
 				<artifactId>csx-business-api</artifactId>
 				<version>${business.version}</version>
 			</dependency>
-			<!--bsf 内部依赖-->
-			<!--解决yh(永辉) dubbo 版本兼容问题-->
-			<!--<dependency>-->
-				<!--<groupId>com.alibaba</groupId>-->
-				<!--<artifactId>dubbo</artifactId>-->
-				<!--<version>yh2.5.7</version>-->
-			<!--</dependency>-->
 		</dependencies>
 	</dependencyManagement>
 

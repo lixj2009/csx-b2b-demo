@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class MessageController {
-    @Autowired
+    //@Autowired
     private SmsProvider smsProvider;
 
     @GetMapping("/sendSms")

@@ -27,7 +27,7 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 public class CustomerService {
 
-    @Autowired
+    //@Autowired
     private CustomerMapper customerMapper;
 
     /**
